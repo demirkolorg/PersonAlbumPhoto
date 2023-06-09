@@ -1,5 +1,3 @@
 # PersonAlbumPhoto -  Demo için [tıklayın](https://person-album-photo.vercel.app/)
 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+![Ekran Alıntısı](https://github.com/demirkolorg/PersonAlbumPhoto/assets/52527207/1ed240aa-2287-41cd-9e22-2980f8b77c90)
