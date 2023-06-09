@@ -20,7 +20,7 @@ const UserItem = ({ user }) => {
       <button className="flex items-center gap-3 " onClick={userDeleteHandle}>
         <FaTrash className="fill-amber-950  hover:fill-red-500 hover:scale-150" />
       </button>
-      {user.name}
+      <span className="text-xl">{user.name}</span>
     </>
   );
   return (

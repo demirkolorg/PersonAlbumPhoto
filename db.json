@@ -249,12 +249,12 @@
       "id": 84
     },
     {
-      "name": "Nevra Özkara",
-      "id": 85
-    },
-    {
       "name": "Birol Beşok",
       "id": 86
+    },
+    {
+      "name": "Dr. Bağdagül Erbulak",
+      "id": 87
     }
   ],
   "albums": [
@@ -572,6 +572,11 @@
       "userId": 86,
       "title": "Bolu",
       "id": 83
+    },
+    {
+      "userId": 87,
+      "title": "Rize",
+      "id": 84
     }
   ],
   "photos": [
@@ -619,6 +624,21 @@
       "albumId": 83,
       "url": "https://loremflickr.com/150/150/city?lock=1167658586210304",
       "id": 14
+    },
+    {
+      "albumId": 84,
+      "url": "https://loremflickr.com/150/150/city?lock=4695030727966720",
+      "id": 16
+    },
+    {
+      "albumId": 84,
+      "url": "https://loremflickr.com/150/150/city?lock=314959082815488",
+      "id": 18
+    },
+    {
+      "albumId": 84,
+      "url": "https://loremflickr.com/150/150/city?lock=7724035840409600",
+      "id": 21
     }
   ]
 }

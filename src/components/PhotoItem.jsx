@@ -34,7 +34,7 @@ const PhotoItem = ({ photo }) => {
         alt=""
         className="border-2 border-amber-500"
       />
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2	-translate-y-1/2">{content}</div>
+      <div className="absolute left-1/2 top-1/2 -translate-x-10 -translate-y-5 ">{content}</div>
     </div>
   );
 };

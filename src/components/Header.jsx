@@ -10,15 +10,15 @@ const Header = () => {
 
   return (
     <>
-      <header className="m-3 ">
+      <header className="m-5">
         <nav className="bg-white align-middle border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a className="flex items-center text-amber-950 ">
-              <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="mx-5 self-center text-4xl font-semibold whitespace-nowrap dark:text-white ">
                 User Rehber
               </span>
             </a>
-            <div className="flex items-center lg:order-2">
+            <div className="flex items-center lg:order-2 mx-5">
               <button
                 disabled={results.isLoading}
                 onClick={addUserHandle}
