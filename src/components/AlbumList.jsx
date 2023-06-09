@@ -35,12 +35,14 @@ const AlbumList = ({ user }) => {
   } else {
     content = (
       <>
-        { data.length>0?(data
-          .slice(0)
-          .reverse()
-          .map((album) => {
-            return <AlbumItem key={album.id} album={album} />;
-          })):(`${user.name} isimli kullanıcının gösterilecek herhangi bir albümü yok, yeni elbüm eklemeyi deneyiniz.`)}
+        {data.length > 0
+          ? data
+              .slice(0)
+              .reverse()
+              .map((album) => {
+                return <AlbumItem key={album.id} album={album} />;
+              })
+          : `${user.name} isimli kullanıcının gösterilecek herhangi bir albümü yok, yeni elbüm eklemeyi deneyiniz.`}
       </>
     );
   }
@@ -48,7 +50,10 @@ const AlbumList = ({ user }) => {
   return (
     <>
       <div className="flex justify-between items-center m-5">
-        <span className="text-xl">{user.name} Albümü</span>
+        <span className="text-xl">
+  
+          <span className="font-semibold"> {user.name} </span> kullanıcısının albümleri
+        </span>
         <div className="flex items-center lg:order-2">
           <button
             disabled={results.isLoading}

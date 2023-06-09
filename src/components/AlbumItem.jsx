@@ -1,11 +1,13 @@
 import { ImSpinner9 } from "react-icons/im";
-import { useRemoveAlbumMutation } from "../store";
+import { useFetchPhotosQuery, useRemoveAlbumMutation } from "../store";
 import { FaTrash } from "react-icons/fa";
 import ExpandablePanel from "./ExpandablePanel";
 import PhotoList from "../components/PhotoList";
 
 const AlbumItem = ({ album }) => {
   const [removeAlbum, results] = useRemoveAlbumMutation();
+  const { data, isError, isFetching } = useFetchPhotosQuery(album);
+
   const albumDeleteHandle = () => {
     removeAlbum(album);
   };
@@ -20,7 +22,8 @@ const AlbumItem = ({ album }) => {
       <button className="flex items-center gap-3 " onClick={albumDeleteHandle}>
         <FaTrash className="fill-amber-950  hover:fill-red-500 hover:scale-150" />
       </button>
-      {album.title}
+      {album.title} Albümü ({data && data.length} fotoğraf)
+      
     </>
   );
   return (

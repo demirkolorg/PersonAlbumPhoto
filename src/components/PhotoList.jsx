@@ -50,7 +50,8 @@ const PhotoList = ({ album }) => {
   return (
     <>
       <div className="flex justify-between items-center m-5">
-        <span className="text-xl">{album.title} Fotoğrafları</span>
+        <span className="text-xl">{album.title} Fotoğrafları </span>
+        
         <div className="flex items-center lg:order-2">
           <button
             disabled={results.isLoading}
@@ -71,7 +72,7 @@ const PhotoList = ({ album }) => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-5 mb-3">{content}</div>
+      <div className="grid grid-cols-8 gap-5 mb-3">{content}</div>
     </>
   );
 };

@@ -12,7 +12,7 @@ const ExpandablePanel = ({ header, children }) => {
       <div className="mb-5">
         <div
           onClick={panelIconToogleHandle}
-          className={`cursor-pointer flex justify-between p-5 border ${
+          className={`cursor-pointer flex justify-between  p-5 border ${
             !expanded ? "bg-amber-300 rounded-t-lg  border-amber-500" : "border-sky-500 bg-sky-300 rounded-t-lg"
           }`}
         >
